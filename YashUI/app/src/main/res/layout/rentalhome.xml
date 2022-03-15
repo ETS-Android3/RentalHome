@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".SplashScreen">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/rental_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <ImageView
+            android:id="@+id/home_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/rental_home"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <ImageView
+        android:id="@+id/home_image1"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rental_home"
+        app:layout_constraintBottom_toTopOf="@id/rental_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/rental_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Rental Home"
+        android:elevation="10dp"
+        android:textColor="@color/primary"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        app:layout_constraintEnd_toEndOf="@+id/rental_text"
+        app:layout_constraintStart_toStartOf="@+id/rental_text"
+        app:layout_constraintTop_toBottomOf="@+id/rental_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.ChipGroup
+    android:id="@+id/facilities"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/one"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/two"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/three"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Supply" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/four"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanitary" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/five"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balcony" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/six"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/seven"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garden" />
+</com.google.android.material.chip.ChipGroup>
